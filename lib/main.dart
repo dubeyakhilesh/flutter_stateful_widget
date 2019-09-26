@@ -37,7 +37,11 @@ class _MyFriend extends State<MyStateFull>{
         child: Column(
           children: <Widget>[
             TextField(
-
+              onChanged: (String userInpur){
+                setState(() {
+                  myBestFriend = userInpur;
+                });
+              },
             ),
 
             Padding(
